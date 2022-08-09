@@ -46,7 +46,12 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
-
+                Editable editable1 = firstNumber.getText();
+                Editable editable2 = secondNumber.getText();
+                double number1 = Double.parseDouble(editable1.toString());
+                double number2 = Double.parseDouble(editable2.toString());
+                double result = number1 - number2;
+                resultBox.setText(Double.toString(result));
             }
         });
         multiplication.setOnClickListener(new View.OnClickListener()
@@ -54,7 +59,12 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
-
+                Editable editable1 = firstNumber.getText();
+                Editable editable2 = secondNumber.getText();
+                double number1 = Double.parseDouble(editable1.toString());
+                double number2 = Double.parseDouble(editable2.toString());
+                double result = number1 * number2;
+                resultBox.setText(Double.toString(result));
             }
         });
         division.setOnClickListener(new View.OnClickListener()
@@ -62,7 +72,12 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
-
+                Editable editable1 = firstNumber.getText();
+                Editable editable2 = secondNumber.getText();
+                double number1 = Double.parseDouble(editable1.toString());
+                double number2 = Double.parseDouble(editable2.toString());
+                double result = number1 / number2;
+                resultBox.setText(Double.toString(result));
             }
         });
 
